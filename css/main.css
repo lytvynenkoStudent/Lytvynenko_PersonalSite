@@ -1,0 +1,67 @@
+.skills{
+	font-style: italic; /* Задам курсивний стиль шрифту */
+	border-style: dashed; /* Задам стиль границі */
+	border-color: green;  /* Задам колір границі */
+	padding: 5px; /* Задам внутрішній відступ елементу*/
+	width: 50%; /* Задам ширину елементу */
+	margin: auto; /* Задам автоматичні зовнішні відступи */
+}
+
+body {
+	background-color: #FFEBCD; /* Задам фон сторінки */
+}
+
+#photo{
+	border-radius: 100%; /* Задам радіус елементу з фото*/
+	width: 170px; /* Задам ширину*/
+	height: 170px; /* Задам висоту*/
+}
+
+h1{
+	font-family: 'Balsamiq Sans', cursive; /* Задам шрифт для заголовку*/
+	font-size: 50px; /* Розмір заголовку */
+	font-variant: small-caps; /* Задам відображення тексту*/
+}
+
+.info{
+	color: RoyalBlue; /* Задам колір шрифту */
+	line-height: 25px; /* Задам міжстроковий інтервал*/
+}
+
+#skills-header{
+	text-align: center; /* Задам позиціювання тексту посередині*/
+	font-size: 35px; /* Задам розмір шрифту*/
+	font-style: italic; /* Задам курсив шрифту */
+}
+
+
+.songs h4{
+	font-size: 25px; /* Задам розмір шрифту*/
+	font-style: italic; /* Задам курсив шрифту*/
+}
+
+.songs li{
+	text-decoration: underline dotted yellow; /* Задам жовте точкове підкреслення для тексту*/
+}
+
+.page-back{
+	background-image: url(../img/background.jpg); /* Задам задній фон елементу*/
+	background-repeat: repeat; /* Задам повторення заднього фону*/
+}
+
+
+.p-settings{
+	font-size: 20px; /* Задам розмір шрифту */
+	width: 80%; /* Задам ширину елементу*/
+}
+
+.next-page:hover{
+	font-size: 20px; /* Задам розмір шрифту при наведенні*/
+	color: red; /* Задам колір шрифту при наведенні*/
+}
+
+
+#HTML, #CSS {
+	font-style: normal;
+	font-size: 25px;
+}

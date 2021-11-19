@@ -3,21 +3,44 @@
     <head>
         <meta charset="utf-8" />
         <title>Vladyslav Lytvynenko | Personal Site</title>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <style>
+        hr{
+            margin-left: auto; /* Задання автоматичного відступу ліворуч */
+            margin-right: auto; /* Задання автоматичного відступу праворуч */
+            padding: 0; /* Задання внутрішнього відступу */
+            height: 0; /* Задання висоти */
+            border: none; /* Видалення стилю границ і*/
+            border-top: 5px dashed blue; /* Задання верхнього пунктирного відступу з синім кольором */
+            width: 70%; /* Задання ширини блоку */
+        }
+
+        .link-section{
+            background: yellow; /* Задання жовтого заднього фонк */
+            border-style: solid; /* Задання суцільної рамки */
+            padding: 5px 20px; /* Задання верхнього/нижнього та лівого/правого відступів */
+
+        }
+
+        </style>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
-    <body bgcolor="#D0F4F4">    
-        <table>
+    <body>    
+        <table style="padding-right: 40px;">
             <tr>
-                <td><img src="img1.jpg" alt="It's me"></td>
-                <td><h1>Персональний сайт Литвиненка Владислава</h1></td>
+                <td><img src="img/img1.jpg" alt="It's me" id="photo"></td>
+                <td><h1>Персональний сайт <i>Литвиненка Владислава</i></h1></td>
             </tr>
         </table>
-        <table width="50%" align="center">
+        <table style="width:70%; margin-left: auto; margin-right: auto;" >
+            <hr>
             <tr>
-                <td><strong>Литвиненко Владислав, початківець у сфері кібербезпеки. Навчаюсь в НАУ (ФККПІ).</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                <td class="info"><strong>Литвиненко Владислав, початківець у сфері кібербезпеки. Навчаюсь в НАУ (ФККПІ).</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
             </tr>
             <tr>
-                    <ul>
-                        <td><h4>Улюблені пісні:</h4> 
+                <td>
+                    <ul class="songs">
+                        <h4>Улюблені пісні:</h4> 
                         <li>Are you all good - Breathe.</li>
                         <li>Train - Brick + Mortar</li>
                         <li>Vivaldi - Faber </li>
@@ -27,11 +50,11 @@
             </tr>
             <tr>
                 <td>
-                    <h2>Skills:</h2>
-                    <table border="3" width="100%" cellpadding="10">
+                    <h2 id="skills-header">Skills:</h2>
+                    <table border="3" cellpadding="10" class="skills">
                         <tr >
-                            <td>HTML&#11088;&#11088;&#11088;&#11088;&#11088;</td>
-                            <td>CSS&#11088;&#11088;&#11088;&#11088;</td>
+                            <td id="HTML">HTML&#11088;&#11088;&#11088;&#11088;&#11088;</td>
+                            <td id="CSS">CSS&#11088;&#11088;&#11088;&#11088;</td>
                         </tr>
                         <tr >
                             <td>JS&#11088;&#11088;&#11088;</td>
@@ -53,13 +76,14 @@
                 </td>
             </tr>
         </table>
+        <hr>
         <table width="80%" align="center">
             <tr>
                 <td width="85%">
                     <p>All rights are reserved</p>
-                    <a href="second_page.html">Перехід на наступну сторінку</a>
+                    <a href="second_page.html" class="next-page">Перехід на наступну сторінку</a>
                 </td>
-                <td width="15%">
+                <td class="link-section">
                     <h3>Контактна інформація:</h3>
                     <p>phone: +380999999</p>
                     <p>mail: mymail@gmail.com</p>
