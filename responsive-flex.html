@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lytvynenko. Lab4. Task4.</title>
+	<style>
+		body {
+			margin: 0; /* Видалення зайвих відступів у головного елемента сторінки */
+			font-family: arial;
+		}
+		nav { /* Блок навігації */
+			box-sizing: border-box;
+			height: 75px;
+			padding-top: 30px;
+			background-color: royalblue;
+			color: white;
+			display: flex; /* Увімкнення flex-box для елементів усередині nav */
+			justify-content: space-around;
+		}
+
+		nav a { /* Задання стилів для посилань всередині блоку навігації */
+			color: white;
+			text-decoration: none;
+			padding: 20px;
+		}
+
+		header { /* Верхній колонтитул */
+			height: 500px;
+			background: url(img/background_1.jpg) no-repeat; /* Задання заднього фону, що не повторюється */
+			background-size: cover; /* Розтягування заднього фону */
+		}
+		header h1 { /* Задання стилів заголовку всередині верхнього колонтитулу */
+			color: white;
+			font-size: 40px;
+			width: 80%;
+			padding: 0;
+			margin: 0;
+			position: relative; /* Задання відносного позиціювання */
+			top: 40%;
+			left: 10%;
+		}
+
+		.MainSection { /* Головна секція */
+			margin: 75px 100px; /* Зовнішні відступи секції */
+		}
+
+		.MainSection h2 {
+			text-align: center; /* Вирівнювання заголовку 2-го рівня всередині головної секції */
+		} 
+
+		.section-paragraph { /* Задання стилів для параграфів всередині секції */
+			text-align: center;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 75px; /* Визначення нижнього зовнішьного відступу від параграфу */
+		}
+
+
+
+		.MainSection_Box-Container{ /* Зовнішній блок для оформлення flex-box блоків всередині секції */
+			display: flex; /* Увімкнення flex для внутрішніх елементів */
+			flex-direction: row; /* Горизонтальний напрямок елементів */
+			justify-content: space-between; /* Вирівнювання вздовж головної вісі з проміжком між елементами */
+		}
+
+		.MainSection_Box{ /* Стилі блоків всередині секції */
+			box-sizing: border-box;
+			width: 48%; /* Ширини оранжевих блоків */
+			background-color: lightskyblue; /* Задання кольору заднього фону */
+			padding: 10px;
+		}
+
+		.MainSection_Box img { /* Підбір розміру зображення відносно його батьківського елементу */
+			width: 100%;
+		}
+
+		.PreFooter { /* Блок перед нижнім колонтитулом*/
+			height: 40px;
+			background-color: silver;
+			color: white;
+		}
+
+		footer { /* Нижній колонтитул */
+			height: 100px;
+			background-color: black;
+			color: white;
+		}
+
+		.PreFooter p, footer p { /* Задання стилів параграфів всередині блоків div та footer */
+			margin: 0;
+			padding: 0;
+			padding-top: 10px;
+			text-align: center;
+		}
+
+		@media (max-width: 1200px) { /* Створення медіа-запиту для пристроїв із шириною дисплею до 1200 пікселів */
+			.MainSection { /* Зміна розміру головної секції */
+				margin-left: 4%;
+				margin-right: 4%;
+			}
+			.MainSection_Box-Container {
+				flex-direction: column;
+				justify-content: center;
+
+			}
+
+			.MainSection_Box {
+				margin: 0;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 40px;
+				width: 90%;
+			}
+
+			.section-paragraph { /* Зміна розміру параграфу всередині секції */
+				width: 90%;
+			}
+
+		}
+
+	</style>
+</head>
+<body>
+	<nav> <!-- Блок навігації -->
+		<span><strong>LYTVYNENKO</strong></span>
+		<div> <!-- Блок з посиланнями -->
+			<a href="index.html">HOME</a>
+			<a href="index.html">ABOUT</a>
+			<a href="index.html">CONTACT</a>
+		</div>
+	</nav> 
+	<header><!-- Верхній колонтитул-->
+		<h1>Персональний сайт Литвиненка Владислава</h1>
+	</header> 
+	<section class="MainSection"> <!-- Головна секція-->
+		<h2>SOMETHING</h2>
+		<p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <!-- Елемент p -->
+		<div class="MainSection_Box-Container"> <!-- Зовнішній блок для оформлення боксів -->
+			<div class="MainSection_Box"> <!-- Бокс з інформацією -->
+				<img src="img/img1_block.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+			</div>
+			<div class="MainSection_Box"> <!-- Бокс з інформацією -->
+				<img src="img/img2_block.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+			</div> 
+		</div>
+	</section> 
+	<div class="PreFooter"><!-- Блок перед нижнім колонтитулом -->
+		<p>JUST  DO IT</p>
+	</div> 
+	<footer><!-- Нижній колонтитул -->
+		<p>ALL RIGHTS ARE RESERVED</p>
+	</footer> 
+</body>
+</html>
